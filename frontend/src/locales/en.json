@@ -1,0 +1,32 @@
+{
+    "auth": {
+        "login": "Sign In",
+        "register": "Sign Up",
+        "logout": "Sign Out",
+        "email": "Email",
+        "password": "Password",
+        "password_confirmation": "Confirm Password",
+        "name": "Name",
+        "signing_in": "Signing in...",
+        "signing_up": "Signing up...",
+        "no_account": "Don't have an account?",
+        "has_account": "Already have an account?",
+        "error_login": "Invalid email or password",
+        "error_register": "Registration failed"
+    },
+    "dashboard": {
+        "welcome": "Welcome, {name}",
+        "subtitle": "This is your dashboard."
+    },
+    "nav": {
+        "dashboard": "Dashboard"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "Something went wrong",
+        "back": "Back",
+        "choose_file": "Choose file",
+        "no_file": "No file chosen",
+        "select": "Select..."
+    }
+}

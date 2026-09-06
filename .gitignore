@@ -1,0 +1,14 @@
+.env
+
+# Laravel
+backend/vendor/
+backend/.env
+backend/storage/logs/*.log
+backend/storage/framework/cache/
+backend/storage/framework/sessions/
+backend/storage/framework/views/
+backend/bootstrap/cache/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/

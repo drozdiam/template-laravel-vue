@@ -1,34 +1,34 @@
 # Laravel + Vue Starter
 
-Шаблон проекта на Laravel + Vue 3 с Docker.
+A starter template built on Laravel + Vue 3 with Docker.
 
-## Стек
+## Stack
 
 | | |
 |---|---|
 | Backend | Laravel, PHP 8.x, PostgreSQL, Redis, Horizon |
 | Frontend | Vue 3, Vite, Tailwind CSS v4, Pinia, Vue Router, vue-i18n |
-| Инфраструктура | Docker, Nginx |
+| Infrastructure | Docker, Nginx |
 
-## Структура
+## Structure
 
 ```
 backend/    # Laravel
 frontend/   # Vue 3
-docker/     # Dockerfile'ы и конфиги Nginx
+docker/     # Dockerfiles and Nginx config
 docker-compose.yml
 .env.example
 ```
 
-## Запуск
+## Getting started
 
 ```bash
 cp .env.example .env
 
 # Backend
-composer create-project laravel/laravel backend
+cd backend && composer install
 
-# Запустить контейнеры
+# Start containers
 docker compose up -d
 
 # Frontend

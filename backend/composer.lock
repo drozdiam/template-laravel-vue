@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cda2add6397422fb1a2eb5b9207f1575",
+    "content-hash": "ee2c1e919807b6170ad37091b3ae2cba",
     "packages": [
         {
             "name": "brick/math",
@@ -1282,6 +1282,86 @@
             "time": "2026-09-01T21:42:30+00:00"
         },
         {
+            "name": "laravel/horizon",
+            "version": "v5.52.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/horizon.git",
+                "reference": "8ea23ed9a48a0c08962314761dbd91cdd57fee7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/horizon/zipball/8ea23ed9a48a0c08962314761dbd91cdd57fee7e",
+                "reference": "8ea23ed9a48a0c08962314761dbd91cdd57fee7e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-pcntl": "*",
+                "ext-posix": "*",
+                "illuminate/contracts": "^12.0|^13.0",
+                "illuminate/queue": "^12.0|^13.0",
+                "illuminate/support": "^12.0|^13.0",
+                "laravel/sentinel": "^1.0",
+                "nesbot/carbon": "^3.0",
+                "php": "^8.2",
+                "ramsey/uuid": "^4.0",
+                "symfony/console": "^7.0|^8.0",
+                "symfony/error-handler": "^7.0|^8.0",
+                "symfony/polyfill-php83": "^1.28",
+                "symfony/process": "^7.4.5|^8.0.5"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^10.9|^11.0",
+                "phpstan/phpstan": "^1.10|^2.0",
+                "predis/predis": "^1.1|^2.0|^3.0"
+            },
+            "suggest": {
+                "ext-redis": "Required to use the Redis PHP driver.",
+                "predis/predis": "Required when not using the Redis PHP driver (^1.1|^2.0|^3.0)."
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Horizon": "Laravel\\Horizon\\Horizon"
+                    },
+                    "providers": [
+                        "Laravel\\Horizon\\HorizonServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Horizon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Dashboard and code-driven configuration for Laravel queues.",
+            "keywords": [
+                "laravel",
+                "queue"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/horizon/issues",
+                "source": "https://github.com/laravel/horizon/tree/v5.52.0"
+            },
+            "time": "2026-11-16T15:32:25+00:00"
+        },
+        {
             "name": "laravel/prompts",
             "version": "v0.3.24",
             "source": {
@@ -1339,6 +1419,62 @@
                 "source": "https://github.com/laravel/prompts/tree/v0.3.24"
             },
             "time": "2026-08-20T12:55:36+00:00"
+        },
+        {
+            "name": "laravel/sentinel",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/sentinel.git",
+                "reference": "972d9885d9d14312a118e9565c4e6ecc5e751ea1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/sentinel/zipball/972d9885d9d14312a118e9565c4e6ecc5e751ea1",
+                "reference": "972d9885d9d14312a118e9565c4e6ecc5e751ea1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/container": "^8.37|^9.0|^10.0|^11.0|^12.0|^13.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.27",
+                "orchestra/testbench": "^6.47.1|^7.56|^8.37|^9.16|^10.9|^11.0",
+                "phpstan/phpstan": "^2.1.33"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Sentinel\\SentinelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Sentinel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "mior@laravel.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/laravel/sentinel/tree/v1.1.0"
+            },
+            "time": "2026-03-24T14:03:38+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -2540,6 +2676,236 @@
             "time": "2026-02-16T23:10:27+00:00"
         },
         {
+            "name": "nutgram/hydrator",
+            "version": "7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nutgram/hydrator.git",
+                "reference": "a9dc51b7e6ea61b3e582f0fecd8c91ea22602c11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nutgram/hydrator/zipball/a9dc51b7e6ea61b3e582f0fecd8c91ea22602c11",
+                "reference": "a9dc51b7e6ea61b3e582f0fecd8c91ea22602c11",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "psr/container": "^1.1 || ^2.0"
+            },
+            "require-dev": {
+                "illuminate/container": "^10.0",
+                "phpunit/phpunit": "^10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SergiX44\\Hydrator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergio Brighenti",
+                    "email": "sergio@brighenti.me",
+                    "homepage": "https://github.com/SergiX44"
+                },
+                {
+                    "name": "Anatoly Fenric",
+                    "email": "afenric@gmail.com",
+                    "homepage": "https://github.com/fenric"
+                }
+            ],
+            "description": "Hydrator for PHP 8.0+",
+            "homepage": "https://github.com/nutgram/hydrator",
+            "keywords": [
+                "data-mapper",
+                "dto",
+                "hydrator",
+                "jsonmapper",
+                "mapper",
+                "php8"
+            ],
+            "support": {
+                "issues": "https://github.com/nutgram/hydrator/issues",
+                "source": "https://github.com/nutgram/hydrator/tree/7.2.0"
+            },
+            "time": "2026-07-24T20:41:06+00:00"
+        },
+        {
+            "name": "nutgram/laravel",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nutgram/laravel.git",
+                "reference": "1e036461f69ff20e4e7689824e58fa3931dc248d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nutgram/laravel/zipball/1e036461f69ff20e4e7689824e58fa3931dc248d",
+                "reference": "1e036461f69ff20e4e7689824e58fa3931dc248d",
+                "shasum": ""
+            },
+            "require": {
+                "nunomaduro/termwind": "^1.0|^2.0",
+                "nutgram/nutgram": "^4.52.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "illuminate/testing": "^12.0|^13.0",
+                "orchestra/testbench": "^10.0|^11.0",
+                "pestphp/pest": "^1.1|^2.0|^3.0|^4.0",
+                "vimeo/psalm": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Nutgram\\Laravel\\NutgramServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Support/Helpers.php"
+                ],
+                "psr-4": {
+                    "Nutgram\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luca Patera",
+                    "email": "lucapatera@outlook.it",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sergio Brighenti",
+                    "email": "sergio@brighenti.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel package for Nutgram",
+            "homepage": "https://github.com/nutgram/nutgram-laravel",
+            "keywords": [
+                "api",
+                "bot",
+                "framework",
+                "laravel",
+                "library",
+                "nutgram",
+                "telegram"
+            ],
+            "support": {
+                "source": "https://github.com/nutgram/laravel/tree/1.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Lukasss93",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/SergiX44",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-11-20T22:44:40+00:00"
+        },
+        {
+            "name": "nutgram/nutgram",
+            "version": "4.53.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nutgram/nutgram.git",
+                "reference": "58ff2f010a4848f3e90c3928d50afdda081f8389"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nutgram/nutgram/zipball/58ff2f010a4848f3e90c3928d50afdda081f8389",
+                "reference": "58ff2f010a4848f3e90c3928d50afdda081f8389",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^7.15.2|^8.0.1",
+                "illuminate/macroable": ">=9.0",
+                "laravel/serializable-closure": "^1.0|^2.0",
+                "nutgram/hydrator": "^7.2.0",
+                "php": "^8.2",
+                "psr/log": "^1.0|^2.0|^3.0",
+                "psr/simple-cache": "^1.0|^2.0|^3.0",
+                "sergix44/container": "^3.0"
+            },
+            "require-dev": {
+                "ext-reflection": "*",
+                "mockery/mockery": "^1.6",
+                "pestphp/pest": "^3.0|^4.0",
+                "roave/security-advisories": "dev-latest",
+                "vimeo/psalm": "^7.0"
+            },
+            "suggest": {
+                "ext-sodium": "To validate WebApp data for Third-Party Use"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Support/Helpers.php"
+                ],
+                "psr-4": {
+                    "SergiX44\\Nutgram\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergio Brighenti",
+                    "email": "sergio@brighenti.me",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Luca Patera",
+                    "email": "lucapatera@outlook.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The Telegram bot library that doesn't drive you nuts",
+            "homepage": "https://github.com/SergiX44/Nutgram",
+            "keywords": [
+                "api",
+                "bot",
+                "framework",
+                "laravel",
+                "library",
+                "nutgram",
+                "telegram"
+            ],
+            "support": {
+                "issues": "https://github.com/nutgram/nutgram/issues",
+                "source": "https://github.com/nutgram/nutgram/tree/4.53.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Lukasss93",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/SergiX44",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-11-22T14:58:15+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.10.0",
             "source": {
@@ -3258,6 +3624,62 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.3"
             },
             "time": "2026-06-18T03:57:49+00:00"
+        },
+        {
+            "name": "sergix44/container",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sergix44/container.git",
+                "reference": "202747e5e9b6a46eb9681259d861753dd5a9fab2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sergix44/container/zipball/202747e5e9b6a46eb9681259d861753dd5a9fab2",
+                "reference": "202747e5e9b6a46eb9681259d861753dd5a9fab2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-reflection": "*",
+                "php": "^8.1",
+                "psr/container": "^1.1|^2.0"
+            },
+            "provide": {
+                "psr/container-implementation": "^1.1|^2.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^2.0",
+                "php-di/php-di": "^7.0",
+                "vimeo/psalm": "^5.13"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SergiX44\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergio Brighenti",
+                    "email": "sergio@brighenti.me"
+                }
+            ],
+            "description": "A simple and fast service container",
+            "support": {
+                "issues": "https://github.com/sergix44/container/issues",
+                "source": "https://github.com/sergix44/container/tree/3.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/SergiX44",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-06-18T12:52:08+00:00"
         },
         {
             "name": "symfony/clock",

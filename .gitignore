@@ -12,3 +12,10 @@ backend/bootstrap/cache/
 # Frontend
 frontend/node_modules/
 frontend/dist/
+/.idea/laravel-idea.xml
+/.idea/modules.xml
+/.idea/php.xml
+/.idea/phpunit.xml
+/.idea/spend_calc.iml
+/.idea/vcs.xml
+/.idea/workspace.xml
